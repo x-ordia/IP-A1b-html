@@ -15,15 +15,14 @@
           &emsp;&emsp;&emsp;
           <a href="./shirtSale.html">Home</a>
           &emsp;&emsp;&emsp;
-          <a href="#">Music</a>
+          <a href="./buyPage.html">My Cart</a>
           &emsp;&emsp;&emsp;
           <a href="#">Concerts</a>
-          &emsp;&emsp;&emsp;
-          <a href="./buyPage.html">My Cart</a>
           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+          <a href="#">Music</a>
           &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-          &emsp;&emsp;&emsp;&emsp;&emsp;
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
           <a href="#">Login</a>
           &emsp;&emsp;&emsp;
           <a href="#">Register</a>
@@ -144,8 +143,47 @@
             </section>
         </section>
         <br>
+        <hr>
+        <fieldset width="50%">
+          <legend>Delivery Details</legend>
+          <form action="" method="get" align=center>
+              <label>Delivery Date:</label>
+              <input type="date" name="date" id="date">
+              &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+              Address:
+              <textarea name="address" id="address" cols="50" rows="1"></textarea>
+          </form>
+        </fieldset>
+        <fieldset>
+          <legend>Payment Details</legend>
+          <form action="" method="get">
+              Card Type:
+              <select name="card_type" id="card_type" align=left>
+                <option value="Select a type" disabled hidden selected> Select a type </option>
+                <option value="Net banking"> Net banking </option>
+                <option value="Debit card / Visa card"> Debit card / Visa card </option>
+                <option value="Paypal"> Paypal </option>
+                <option value="Credit Card"> Credit Card </option>
+                <option value="RuPay"> RuPay </option>
+              </select>
+              &emsp;&emsp;&emsp;&emsp;&emsp;
+              Card Number: <input type="number" name="card_nu" id="card_nu">
+              &emsp;&emsp;&emsp;&emsp;&emsp;
+              Expiration Date: <input type="date" name="date" id="date">
+              &emsp;&emsp;&emsp;&emsp;&emsp;
+              CVV: <input type="password" name="cvv" id="cvv">
+              <!-- <input type="submit"  value="Pay Now"> -->
+              <br><hr>
+              UPI ID : <input type="text" name="upi" id="upi">
+              <br><hr>
+              <input type="checkbox" id="cod" name="cod" value="cod">
+              <label for="cod">Cash on Delivery</label>
+              <br><br>
+              <input type="submit"  value="Pay Now">
+          </form>
+        </fieldset>
+        <hr>
         <footer align=center>
-          <hr><hr>
           <br>
           <table align=center>
             <tbody align=center>
@@ -169,41 +207,3 @@
         </footer>
     </center>
 </body>
-
-<!-- <form action="" method="get">
-    <h2>Payment Details</h2>
-
-    Card Type:
-    <select name="card_type" id="card_type" align=left>
-      <option value="Select a type" disabled hidden selected> Select a type </option>
-      <option value="Net banking"> Net banking </option>
-      <option value="Debit card / Visa card"> Debit card / Visa card </option>
-      <option value="Paypal"> Paypal </option>
-      <option value="Credit Card"> Credit Card </option>
-      <option value="RuPay"> RuPay </option>
-    </select>
-    &emsp;&emsp;&emsp;&emsp;&emsp;
-    Card Number: <input type="number" name="card_nu" id="card_nu">
-    &emsp;&emsp;&emsp;&emsp;&emsp;
-    Expiration Date: <input type="date" name="date" id="date">
-    &emsp;&emsp;&emsp;&emsp;&emsp;
-    CVV: <input type="password" name="cvv" id="cvv">
-    <input type="submit"  value="Pay Now">
-    <br><br>
-    UPI ID : <input type="text" name="upi" id="upi">
-    <br><br>
-    <input type="checkbox" id="cod" name="cod" value="cod">
-    <label for="cod">Cash on Delivery</label>
-</form> -->
-<!-- <form action="" method="get" align=right>
-    <h2>Delivery Details</h2><br>
-    <label >Delivery Date:</label>
-    <br>
-    <input type="date" name="date" id="date">
-    <br>
-    <p>Address:</p>
-    <div class="k2">
-        <textarea name="address" id="address" cols="30" rows="10"></textarea>
-    </div>
-    <br>
-</form> -->
